@@ -397,7 +397,7 @@ pipeline {
 
         // EC2 SSH Key for deploying to the application server (the one Terraform creates)
         // This credential must be the .pem file content for your EC2 key pair (e.g., my-key.pem)
-        EC2_SSH_KEY_ID           = 'ec2-app-ssh-key' // ID of the SSH Key credential in Jenkins
+        EC2_SSH_KEY_ID           = 'cicddemo1' // ID of the SSH Key credential in Jenkins
 
         // Terraform variables - these will be passed to Terraform to create the application EC2
         // Find your current public IP (e.g., using 'whatismyip.com' or 'curl ifconfig.me')
@@ -548,7 +548,7 @@ Kind: SSH Username with private key
 
 Scope: Global
 
-ID: ec2-app-ssh-key (exactly as used in Jenkinsfile).
+ID: cicddemo1 (exactly as used in Jenkinsfile).
 
 Description: SSH Key for .NET Application EC2
 
